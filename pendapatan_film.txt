@@ -1,0 +1,13 @@
+CREATE TABLE PENDAPATAN_FILM (id INT(2), 
+	nama_film ENUM("Avatar", "Titanic", "Star Wars : The Force Awekens", "Jurassic World", "The Avengers"),
+	pendapatan_dollar BIGINT,
+	tahun_produksi YEAR);
+
+INSERT INTO PENDAPATAN_FILM VALUES 
+	(1, "Avatar", 2787965087, 2009),
+	(2, "Titanic", 2186772302, 1997),
+	(3, "Star Wars : The Force Awekens", 2068223624,2015),
+	(4, "Jurassic World", 167113208,2015),
+	(5, "The Avengers", 15181288,2012);
+
+SELECT * FROM pendapatan_film;
